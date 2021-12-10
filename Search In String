@@ -1,0 +1,19 @@
+package LinearSearch;
+
+public class SearchInString {
+    public static void main(String[] args) {
+        String str = "";
+        System.out.println(inString(str,'h'));
+    }
+    static boolean inString(String str,char target){
+        if (str == null || str.length() == 0){
+            return false;
+        }
+        for (int i=0;i<str.length();i++){
+            if (target == str.charAt(i)){
+                return true;
+            }
+        }
+        return false;
+    }
+}
