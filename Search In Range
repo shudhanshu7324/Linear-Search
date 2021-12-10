@@ -1,0 +1,22 @@
+package LinearSearch;
+
+public class SearchinRange {
+    public static void main(String[] args) {
+        int[] arr = {23,45,67,87,24,54};
+//        SearchinRange sr = new SearchinRange();
+//        System.out.println(sr.SearchRange(arr,24,3,5));
+        System.out.println(SearchRange(arr,24,3,5));
+        System.out.println(SearchRange(arr,23,2,5));
+    }
+    static int SearchRange(int[] arr,int target,int start,int end){
+        if (arr.length == 0){
+            return -1;
+        }
+        for (int index = start;index <= end;index++){
+            if (arr[index] == target){
+                return index;
+            }
+        }
+        return -1;
+    }
+}
